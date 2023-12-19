@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background-color: #6b21a8;
+}
+
+body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #d1d5db;
+  font-size: x-large;
+  font-weight: 400;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  font-size: 0.75rem;
+  color: #ffffff;
+  max-width: 568px;
+  margin: auto;
+}
+
+.tiga-teratas {
+  padding: 1.75rem 1rem;  
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  background-color: #581c87;
+  border-radius: 2rem;
+}
+
+.items-atas {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+}
+
+/* Untuk rank 2 dan 3 */
+.items-atas:nth-child(odd) {
+  margin-top: 0.25rem;
+  margin-top: 0.25rem;
+  padding: 0.75rem;
+}
+
+.items-atas img {
+  border-radius: 9999px;
+  border-width: 0.25rem;
+  width: 100%;
+  border-style: solid;
+  display: flex;
+  aspect-ratio: 1/1;
+  margin: 0.75rem 0;
+}
+
+.items-atas> :nth-child(3) {
+  padding: 1rem 0 0.25rem 0;
+}
+
+.items-atas> :nth-child(4) {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.lainnya {
+  padding: 1.75rem;
+}
+
+.items {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 1rem;
+}
+
+.items-atas:nth-child(2)> img {
+  border-color: #facc15;
+}
+
+.items:nth-child(3n+1) {
+  background-color: #facc15;
+}
+
+.items-atas:nth-child(1)> img {
+  border-color: #60a5fa;
+}
+
+.items:nth-child(3n+2) {
+  background-color: #60a5fa;
+}
+
+.items-atas:nth-child(3)> img {
+  border-color: #f472b6;
+}
+
+.items:nth-child(3n) {
+  background-color: #f472b6;
+}
+
+.items> :first-child {
+  width: 16%;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.items> :nth-child(2) {
+  width: 14%;
+  border-radius: 9999px;
+  aspect-ratio: 1/1;
+}
+
+.items> :nth-child(3) {
+  margin-left: 0.5rem;
+  width: 100%;
+}
+
+.items> :nth-child(4) {
+  width: 16%;
+  color: white;
+}
+
+.segitiga {
+  width: 6px;
+  height: 6px;
+}
+
+.naik {
+  color: #00ff00;
+}
+
+.sama {
+  color: #C0C0C0;
+}
+
+.turun {
+  color: #ff0000;
+  transform: rotate(180deg);
+}
